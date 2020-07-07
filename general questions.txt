@@ -1,0 +1,4 @@
+- what is diffrence between framework and library?
+- what is dom?
+- what is rest api and soap and odata services?
+- how to extend list so that it works as set - what changes are needed for the same? 

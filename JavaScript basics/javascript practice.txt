@@ -1,0 +1,87 @@
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+var __input_stdin = "";
+var __input_stdin_array = "";
+var __input_currentline = 0;
+
+process.stdin.on('data', function (data) {
+    __input_stdin += data;
+});
+
+
+const https = require('https');
+/*
+ * Complete the function below.
+ * Use console.log to print the result, you should not return from the function.
+ * Base url: https://jsonmock.hackerrank.com/api/movies/search/?Title=
+ */
+function function1() {
+    //dummy function
+}
+
+function getMovieTitles(substr) {
+    var cpage, arr, obj;
+    var ans = [];
+
+    let promise = new Promise(function (resolve, reject) {
+        
+    })
+
+    for (cpage = 1; cpage <= 2; cpage++)
+    {
+        https.get('https://jsonmock.hackerrank.com/api/movies/search/?Title=' + substr + '&page=' + cpage, (resp) => {
+            resp.on('data', (res) => {
+                obj = JSON.parse(res);
+                arr = obj.data;
+                for (i = 0; i < arr.length; i++) {
+                    ans.push(arr[i].Title);
+                }
+                //console.log(cpage);
+                if (cpage == 3)
+                {
+                    //console.log('asdas');
+                    ans.sort();
+                    console.log(ans);
+                    return ans;
+                }
+                //console.log(ans);
+            });
+        }).on("error", (err) => {
+            console.log("Error" + arr.message);
+        });
+    }
+
+    //setTimeout(function1, 100000);
+   // console.log(ans);
+
+
+    /*var url ='https://jsonmock.hackerrank.com/api/movies/search/?Title='+substr;
+    var str = [];
+    var cpage;
+
+    for (cpage = 1; cpage <= 2; cpage++)
+    {
+        httpGetAsync(cpage, function (response) {
+            console.log(response);
+            str.push(response);
+        });
+    }
+
+    function httpGetAsync(cpage, handleResponse) {
+        var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+        var xmlHttp = new XMLHttpRequest();
+
+        xml.Http.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                handleResponse(xmlHttp.responseText);
+        }
+
+        xmlHttp.open("GET", requestUrl + '&page=' + cpage);
+        xmlHttp.send(null);
+    } 
+
+    console.log(str);*/
+}
+
+process.stdin.on('end', function () {

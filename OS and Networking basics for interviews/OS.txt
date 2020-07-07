@@ -1,0 +1,78 @@
+- define OS and Kernels. 
+The kernel is a computer program that is the core of a computer's operating system, with complete control over everything in the system.
+On most systems, it is one of the first programs loaded on start-up
+https://en.wikipedia.org/wiki/Kernel_(operating_system)
+https://www.youtube.com/watch?v=mycVSMyShk8
+
+- What are different types of OS? 
+batch (only 1 process at a time even at a time of I/O request - cpu is idol here)
+multiprogramming (non preemptive if no I/O request - cpu is always busy)
+multi tasking (time sharing - round robin)
+multi processing (more than one process can run at a time bcz of more than one processor)
+
+- difference between multi-programming and multi-tasking
+https://www.youtube.com/watch?v=3MqyDWDpZoI - gate smashers
+
+- process v/s threads difference
+https://www.youtube.com/watch?v=ITc09gOrqZk
+https://www.youtube.com/watch?v=YL-W2IDxIBQ (1 difference given here is wrong - if one process is block than no ther process can execute)
+See diagram given in galvin for threads
+
+process is a program in execution 
+thread is a light weight process and it is defined as basic unit of CPU execution which consist of program counter, thread id, stack and registers. Threads share memory i.e address spaces and resources. Example - word doc having spell checker and other features like styling.
+
+context switching is slow for a process
+context switching is fast for a thread
+
+- what are advantages and disadvantage of multi-threading  
+https://www.youtube.com/watch?v=ACSczkYbR3U 
+https://en.wikipedia.org/wiki/Thread_(computing)#Multithreading
+
+- process and all their states (galvin diagram) 
+https://www.youtube.com/watch?v=ABtb-uWhAGY 
+https://www.youtube.com/watch?v=8fCLPCMsVA0
+
+- what do we mean by distributed system 
+https://www.youtube.com/watch?v=fM7z0X08mzo 
+https://www.youtube.com/watch?v=rYK-kTBUrK4
+
+- critical section and race condition in OS
+
+- define process syncronization and how to achieve it  
+cooperative process
+critical section 
+race condtion and it's solution - A race condition is an undesirable situation that occurs when a device or system attempts to perform two or more operations at the same time, but because of the nature of the device or system, the operations must be done in the proper sequence to be done correctly.
+
+3 rules for synchronization (i.e to remove race condition) (i.e a solution to crictical section problem) This solution must follow these 3 conditions: 
+1) mutual exclusion - only one person at a time can enter the critical section area or we can say that only 1 process can use shared resources at a time.
+2) progress - A process which is in non critical section should not stop another process to enter inside critical section area
+3) bounded waiting - A process going again and again inside the critical section area and hence not allowing the other processes to go inside the critical section area. This lead to starvation for other processes which are waiting for indefinate time
+see how to implement solution for critical solution (to implement solution which satisfy all above 3 conditions)
+
+https://www.youtube.com/watch?v=3Eaw1SSIqRg - gate smashers
+https://www.youtube.com/watch?v=qMQsd7Iy5jo - gate smashers
+https://www.studytonight.com/operating-system/process-synchronization
+
+- deadlock in OS and it's 4 necessary and sufficient conditions - mutual exclusion, no pre-emption, hold & wait, circular wait
+1) Mutual Exclusion: One or more than one resource are non-sharable (Only one process can use at a time). 
+Resources can not be share among the processes
+2) Hold and Wait: A process is holding at least one resource and waiting for resources.
+3) No Preemption: A resource cannot be preempted from a process by force. A process can only release a resource voluntarily.
+A resource cannot be taken from a process unless the process releases the resource.
+4) Circular Wait: A set of processes are waiting for each other in circular form.
+
+if we break one of the condition then we can avoid the deadlock condition.
+
+- memory management techniques
+AIM: use memory smartly in such a way so that degree of multi programming is high (to increase the degree of multiprogramming)
+TYPE: 
+1) Contiguous - fixed and variable partition
+2) Non Contiguous - paging, multilevel paging, inverted paging, segmentation, segmented paging
+
+https://www.youtube.com/watch?v=FrTttJLN7Kw
+https://www.youtube.com/watch?v=dz9Tk6KCMlQ - segmentation v/s paging
+
+- virtual memory concept
+
+
+

@@ -1,0 +1,97 @@
+* Distributed applications (distributed apps) are applications or software that runs on multiple computers within a network at the same time and 
+can be stored on servers or with cloud computing. Unlike traditional applications that run on a single system, 
+distributed applications run on multiple systems simultaneously for a single task or job.
+
+* The JRE is the Java Runtime Environment. It is a package of everything necessary to run a compiled Java program, including the Java Virtual Machine (JVM), 
+the Java Class Library, the java command, and other infrastructure. However, it cannot be used to create new programs.
+
+The JDK is the Java Development Kit, the full-featured SDK for Java. It has everything the JRE has, but also the compiler (javac) and tools (like javadoc and jdb). 
+It is capable of creating and compiling programs.
+
+JDK is a superset of JRE, and contains everything that is in JRE, plus tools such as the compilers and debuggers necessary for developing applets and applications. 
+JRE provides the libraries, the Java Virtual Machine (JVM), and other components to run applets and applications written in the Java programming language.
+
+* PATH is an environment variable on Unix-like operating systems, DOS, OS/2, and Microsoft Windows, specifying a set of directories where executable programs are located.
+
+* In Java (from 1.5), enums are represented using enum data type. Java enums are more powerful than C/C++ enums . In Java, we can also add variables, methods and constructors to it. 
+  The main objective of enum is to define our own data types(Enumerated Data Types). 
+
+  public enum TimeFrame {
+	LASTWEEK, LASTMONTH, CURRENTMONTH, QUARTERLY, HALFYEARLY, YEARLY, ALL
+    };
+
+* Java definitively has no structs :)
+
+struct Member {
+  string FirstName; 
+  string LastName;  
+  int BirthYear; 
+};
+
+The equivalent in Java to a struct would be
+class Member
+{
+    public String FirstName; 
+    public String LastName;  
+    public int    BirthYear; 
+ };
+
+* Abstract classes are classes that contain one or more abstract methods. An abstract method is a method that is declared, but contains no implementation. 
+  Abstract classes may not be instantiated, and require subclasses to provide implementations for the abstract methods. It can have only abstract method.
+  You cannot have a private abstract method because subclasses can't see private members of a superclass.
+
+* Java interface keyword is used to declare an interface. It can have only abstract methods (they only have decalaration but no implementation).
+  Interface fields are public, static and final by default, and the methods are public and abstract.
+
+* In Java, an abstract class can implement an interface, and not provide implementations of all of the interface's methods
+100% - interace i
+50% - abstract class a extends interface [0,100]
+0% - class extends abstarct class
+
+* If we have to perform only one operation, having same name of the methods increases the readability of the program.
+ADVANTAGE of method overloading
+Method overloading increases the readability of the program.
+
+* Serialization is a mechanism of converting the state of an object into a byte stream (for some kind of security). To make a Java object serializable 
+we implement the java.io.Serializable interface.
+Transient: Java transient keyword is used in serialization. If you define any data member as transient, it will not be serialized.
+The transient modifier/keyword is applicable only for variables but not for methods and classes.
+At the time of serialization, if we don't want to serialize the value of a particular variable to meet security constraints, then we should declare that variable as transient.
+While performing serialization, the JVM ignores the original value of the transient variable and save default value to the file. Hence, transient means not to serialize.
+
+In msp we can see in some pojos file that few variables are transient as they are not mapped to any DB column.
+
+* 
+/** documentation */
+This is a documentation comment and in general its called doc comment. The JDK javadoc tool uses doc comments when preparing automatically generated documentation.
+Javadoc is a tool which comes with JDK and it is used for generating Java code documentation in HTML format from Java source code, which requires documentation in a predefined format.
+A documentation production program (convert from java source code to HTML format) can be defined as javadoc.
+Each javadoc comment is a block comment that starts with “/**” and ends with“*/”, and each line between these two can begin with a single asterisk, “*”, which is ignored
+
+Java finally block is always executed whether exception is handled or not.
+
+All catch blocks must be ordered from most specific to most general, i.e. catch for ArithmeticException must come before catch for Exception.
+
+//Terminate JVM 
+System.exit(0); 
+System.exit(0) : Generally used to indicate successful termination.
+System.exit(1) or exit(-1) or any other non-zero value â Generally indicates unsuccessful termination.
+
+Checked and unchecked exceptions: https://beginnersbook.com/2013/04/java-checked-unchecked-exceptions-with-examples/
+Throws keyword is used for handling checked exceptions.
+
+Final is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't be overridden and final variable value can't be changed.
+
+finally will be called even we write return statement in the code.
+3 way to stop calling of finally
+1) death of thread
+2) use of System.exit();
+3) turning off the power of CPU
+All 3 are doing the same thing i.e shutdown of VM
+
+Inheritance and overriding in case of static functions 
+https://stackoverflow.com/questions/2475259/can-i-override-and-overload-static-methods-in-java/5436790
+
+see architecture of JVM
+https://www.geeksforgeeks.org/jvm-works-jvm-architecture/
+https://www.youtube.com/watch?v=dncpVFP1JeQ - durga soft

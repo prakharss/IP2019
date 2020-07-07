@@ -1,0 +1,3 @@
+https://javaconceptoftheday.com/java-interview-questions-on-main-method/ - why we write public static void main(String[] args)
+https://www.programiz.com/java-programming/varargs - Varargs 
+https://stackoverflow.com/questions/540396/why-is-main-in-java-void - why main method is void in java

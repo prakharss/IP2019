@@ -1,0 +1,113 @@
+Object and Class
+
+Inheritance
+
+why java don't support multiple inheritance and how virtual function of c++ helps to attain it (in case of multiple inheritance how does it remove ambiguity)
+see the ambiguity as well in the case of multiple inheritacne in java (java doesn't Supports Multiple Inheritance because of ambiguity error)
+1)
+class A { 
+A(){} 
+} 
+class B { 
+B(){} 
+} 
+
+class C implements A, B{ 
+C(){ 
+super(); // Here Constructor chaining problem 
+}}
+
+Abstraction
+
+Encapsulation
+
+Polymorphism - overloading (saving contact in mobile with 2 numbers) and overriding (marry girl example for parent and child)
+
+Access Modifiers
+
+Abstract (example of banks - deposit, withdraw and interest) and Concrete Classes
+
+Interfaces
+
+Abstract Classes v/s Interfaces
+
+Static variable or static method
+
+transient and serialization
+https://www.geeksforgeeks.org/serialization-in-java/ https://www.geeksforgeeks.org/transient-keyword-java/
+
+volatile data type (come in context with multithreading) v/s synchronised
+
+javadoc tool and documentation comment
+
+coupling in Java (interface helps to achieve loose coupling) - https://www.geeksforgeeks.org/coupling-in-java/
+
+singleton and factory bean method
+
+aggregation (has a relationship) v/s inheritance (is a relationship) 
+functional interface
+https://www.geeksforgeeks.org/association-composition-aggregation-java/
+https://www.studytonight.com/java/aggregation.php
+
+checked exception v/s unchecked exception
+https://beginnersbook.com/2013/04/java-checked-unchecked-exceptions-with-examples/
+
+equals and hashCode 
+http://www.technofundo.com/tech/java/equalhash.html https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/
+https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/
+
+String s1 = new String("xyz"); String s2 = new String("pqr"); String s3 = s1 + s2;
+How many strings object formed in memory https://www.youtube.com/watch?v=UKG1xgh_tbQ
+
+Heap memory and stack memeory - performance increases because of string mutability 
+https://www.youtube.com/watch?v=to9DPVsdByE https://www.youtube.com/watch?v=UcPuWY0wn3w
+stack v/s heap http://net-informations.com/faq/net/stack-heap.htm 
+https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/
+
+synchorized keyword in java (StringBuffer is synchronized) 
+StringBuffer v/s StringBuilder
+
+java uses both compiler and interpretor https://www.quora.com/
+Why-does-Java-use-both-compiler-as-well-as-Interpreter
+
+JVM - It is a specification that provides a runtime environment in which Java bytecode can be executed.
+
+var args
+https://www.youtube.com/watch?v=9EzGgz5th_s
+
+COLLECTION
+https://www.youtube.com/watch?v=3hgYHXDVh-o
+https://www.youtube.com/playlist?list=PLsyeobzWxl7oJj5BXYF088REBm-K4c_SR
+
+annotations v/s marker interfaces
+
+The try-with-resources statement https://www.youtube.com/watch?v=V3X6uV4Xg34
+https://www.javatpoint.com/java-try-with-resources
+
+Call STACK 
+https://www.youtube.com/watch?v=Q2sFmqvpBe0
+
+garbage collection and deomon thread (finalize and gc method of garbage collector)
+https://www.geeksforgeeks.org/daemon-thread-java/
+https://www.geeksforgeeks.org/garbage-collection-java/
+https://www.youtube.com/watch?v=ekzIzJbPW4A
+
+anonymous class and anonymous object - telusko learning video for both topics
+
+static block https://www.youtube.com/watch?v=dCvEChffnTA
+https://study.com/academy/lesson/static-block-vs-constructor-in-java.html
+static block is called before class is loaded in to JVM, it is used to initialize 
+
+instance initializer block - {code}
+
+For OOPS Concept some URL's
+https://www.youtube.com/watch?v=7GwptabrYyk
+https://www.youtube.com/watch?v=-HafzawNlUo
+
+For Core Java some URL's
+https://www.quora.com/What-is-the-use-of-abstract-methods-in-Java (SEE RELATED QUESTIONS FOR THIS QUORA URL)
+https://www.youtube.com/watch?v=mf0jQijo9C4 (good abstract class and interface interview questions and when to use Abstract class and when to use Interface in Java)
+
+Association, Composition and Aggregation in Java
+https://www.geeksforgeeks.org/association-composition-aggregation-java/
+https://www.edureka.co/blog/association-in-java/#association

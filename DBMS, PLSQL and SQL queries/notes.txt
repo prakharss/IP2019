@@ -1,0 +1,32 @@
+Sequence is a feature supported by some database systems (oracle) to produce unique values on demand. 
+Some DBMS like MySQL supports AUTO_INCREMENT in place of Sequence.
+
+select hicn_no, row_number() over (partition by hicn_no order by hicn_no) from cms_mmr_restate;
+select hicn_no, row_number() over (order by hicn_no) from cms_mmr_restate;
+
+FOR VARCHAR2 - empty string('') is considered as null in Databases and when we miss any column in insert statement that means null (empty string).
+varchar v/s varchar2 difference - https://www.thecrazyprogrammer.com/2018/01/difference-varchar-varchar2.html
+
+DDL statement (create/alter/drop) does not work inside PL/SQL block as SQL engine is different than Oracle Engine
+need to use excute immediate to run the same. example - execute immediate 'truncate table MSP_PBD_TEMP_INVESTIGATIONS ';
+
+Clustered index can be 1 per table (primary key is always a clustered index) and non clustered index can be 255 per table.
+Primary key is a clustered index and unique key has different index (better to have primary key instead of unique key)
+One clustered index per table is allowed
+
+Procedure can not return int and all but it can return cursor, function can return anything like int
+
+A schema can be defined as the design of a database. The overall description of the database is called the database schema.
+
+TRANSACTION AND ACID PROPERTIES - https://www.geeksforgeeks.org/acid-properties-in-dbms/
+
+MOTTO OF normalisation - remove redundancy and to remove all the anomalies https://www.youtube.com/watch?v=5GDTIUVlHB8
+Introduction to NORMALIZATION | Explained with most suitable example in HINDI - GATE SMASHERS
+
+tables containing code for proc - dba_source
+
+
+
+
+
+

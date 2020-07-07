@@ -1,0 +1,13 @@
+- comparison
+a) select * from worker, title where worker_id = worker_ref_id and worker_title = 'Manager';
+
+b) SELECT DISTINCT W.FIRST_NAME, T.WORKER_TITLE
+FROM Worker W
+INNER JOIN Title T
+ON W.WORKER_ID = T.WORKER_REF_ID
+AND T.WORKER_TITLE in ('Manager');
+
+Difference in execution time for both?
+
+- desktop DB question
+

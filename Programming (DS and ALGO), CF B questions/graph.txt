@@ -1,0 +1,22 @@
+dfs ad bfs
+detect cycle in directed graph (by dfs and using bool variable)
+detect cycle in undirected graph 
+topological ordering 
+graph is bi partite or not (by dfs and bfs)
+bellman ford O(V*E) [works for negative edges as well and no shortest path in case of negative cycles]
+dijkstra by set - O(E * log(V)) and by priority queue - O(E * log(E)) [does not work for negative edges]
+minimum spanning tree by kruskals
+union find data structure
+floyd warshall (all pairs shortest path problem)
+single source shortest path in DAG using topological order O(E+V)
+minimum Cost Path with Left, Right, Bottom and Up moves allowed in binary maze (dp is not applicable here)
+find whether path exist (https://practice.geeksforgeeks.org/problems/find-whether-path-exist/0)
+shortest path in a binary maze (https://practice.geeksforgeeks.org/problems/shortest-source-to-destination-path/0)
+
+find strongly connected components in a graph using KosaRaju Algorithm
+find minimum number of swaps required to sort the array
+circle of strings
+alien dictionary
+snake and ladder problem
+detect cycle in directed graph (how they implemented in geeks without using bool variable for returning from last recursion using dfs and you can go through other methods as well)
+graph is bi partite or not (direct bool return in case of dfs)

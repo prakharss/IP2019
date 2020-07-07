@@ -1,0 +1,25 @@
+• git clone: clone a remote repository to your local.
+• git pull : pull all branches with latest changes to your local.
+• git status : to see what files have been created, modified or deleted.
+• git add foo.js : to stage or simply add files.
+• git reset HEAD : remove all staged files.
+• git commit -m "comments" : commit the staged changes.
+• git reset --soft HEAD~1 : undo your most recent commit and put those changes back into staging.
+• git push : push your committed changes to a remote repository.
+• git stash : save changes that you don’t want to commit immediately.
+• git branch : list out all the branches.
+• git checkout <branch> : switch to different branches.
+
+* git add -u: to add when we delete a file
+
+- when we use add command to some file then it put that file from unstaged area (red) to staged area (green)
+How to put it back to unstaged area (undo of add command)
+git reset filename
+
+-  to remove changes from unstaged area
+git checkout filename
+
+- how to see the items which we are committed
+
+- to resolve merge issue
+https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line

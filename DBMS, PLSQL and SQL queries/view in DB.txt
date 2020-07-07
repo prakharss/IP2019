@@ -1,0 +1,24 @@
+VIEW - a virtual table
+
+A View in Oracle and in other database systems is simply the representation of a SQL statement that is stored in memory so that it can easily be re-used. For example, if we frequently issue the following query
+
+SELECT customerid, customername FROM customers WHERE countryid='US';
+To create a view use the CREATE VIEW command as seen in this example
+
+CREATE VIEW view_uscustomers
+AS
+SELECT customerid, customername FROM customers WHERE countryid='US';
+This command creates a new view called view_uscustomers. Note that this command does not result in anything being actually stored in the database at all except for a data dictionary entry that defines this view. This means that every time you query this view, Oracle has to go out and execute the view and query the database data. We can query the view like this:
+
+SELECT * FROM view_uscustomers WHERE customerid BETWEEN 100 AND 200;
+And Oracle will transform the query into this:
+
+SELECT * 
+FROM (select customerid, customername from customers WHERE countryid='US') 
+WHERE customerid BETWEEN 100 AND 200
+Benefits of using Views
+
+Commonality of code being used. Since a view is based on one common set of SQL, this means that when it is called it’s less likely to require parsing.
+Security. Views have long been used to hide the tables that actually contain the data you are querying. Also, views can be used to restrict the columns that a given user has access to.
+Predicate pushing
+You can find advanced topics in this article about "How to Create and Manage Views in Oracle."

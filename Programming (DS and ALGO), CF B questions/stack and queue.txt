@@ -1,0 +1,14 @@
+queue using 2 stack (implement using struct)
+stack using 2 queue (implement using struct)
+evaluation for post fix expression
+
+first non repeating character in a stream (using queue)
+rain water trapped (constant space method O(1))
+rotten oranges (using BFS)
+maximum value in a sliding window
+stock span problem (my method which is used in max area in histogram as well)
+maximum area in histogram
+implement LRU cache and LFU
+nearest smallest and largest element
+implement a min stack (get minimum element in O(1))
+

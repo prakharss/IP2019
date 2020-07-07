@@ -1,0 +1,18 @@
+max and min depth of binary tree
+check identical, check symmeteric, to invert a tree
+left view of binary tree
+check for bst (max min logic and inorder sorting logic)
+bottom view of binary tree
+vertical order of binary tree
+level order traversal in spiral form (zig-zag) 
+connect nodes at same level (populate next right pointer)
+pre in post without recursion
+make tree using pre in and post in
+check tree is balance tree or not
+lca of binary tree and in BST
+diameter of binary tree
+
+find all permutation of array which will create same bst
+maximum distance between 2 leaves
+serialise and deserialise a binary tree
+convert binary tree to DLL

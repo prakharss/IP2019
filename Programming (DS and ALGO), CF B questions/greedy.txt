@@ -1,0 +1,15 @@
+dijkstra by set - O(E * log(V)) and by priority queue - O(E * log(E)) [does not work for negative edges]
+minimum spanning tree by kruskals
+activity selection problem (sorting by finish time)
+maximum length chain - https://www.geeksforgeeks.org/maximum-length-chain-of-pairs-dp-20/  (can be solved by activity selection problem as well)
+minimize the sum of products - https://www.geeksforgeeks.org/minimize-sum-product-two-arrays-permutations-allowed/
+minimum operation to reach N from 0
+minimum and maximum amount to buy all candies
+fractional knapsack
+
+page faults in LRU
+minimize the heights
+geek collects the ball (how to work our written code for failed test case)
+majority element
+job sequencing by naive and disjoint data structure
+graph coloring

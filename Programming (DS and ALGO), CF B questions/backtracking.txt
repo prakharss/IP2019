@@ -1,0 +1,8 @@
+n queen Problem
+all permutation of a string
+
+solve the soduko
+rat in a maze problem
+all subsets of an array
+word boggle
+generate IP Addresses

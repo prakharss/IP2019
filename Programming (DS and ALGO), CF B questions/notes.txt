@@ -1,0 +1,5 @@
+TYPES OF BINARY TREE
+perfect binary tree - every node has 2 child excpet leaf node
+strictly or full binary tree - every node has 2 or 0 children
+complete binary tree - which is used in heap data structure
+how many different arrays can give same bst if we are inserting from left to right (find all permutation of array which will create same bst)

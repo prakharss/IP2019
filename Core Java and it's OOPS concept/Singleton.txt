@@ -1,0 +1,21 @@
+class Prakhar {
+	Singleton obj1 = Singleton.getInstance();
+	Singleton obj2 = Singleton.getInstance();
+
+	//obj1 and obj2 are equal
+}
+
+class Singleton {
+	private static Singleton uniqueInstance;
+	private Singleton() {}
+
+	public static Singleton getInstance()
+	{
+		if(uniqueInstance==NULL)
+		{
+			uniqueInstance=new Singleton();
+		} 
+
+		return uniqueInstance;
+	}
+}

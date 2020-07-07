@@ -1,0 +1,122 @@
+* OOP: Object Oriented Programming is a methodology or paradigm to design a software (or program) using classes and objects. So, it's basically a software design methodology.
+
+* In object-oriented programming, a class is a template definition or blue print from which an objects properties and behaviour is decided. Example: Vehicle or Student Class
+
+* A Object is an instance of class and are real world entities which have their own properties and behaviour. Example: Car, Scooty, Bikes for a vehicle class. 
+Thus, an object is a specific instance of a class, it contains real values instead of variables. 
+
+* Abstraction: Showing only essentials part and hiding implementation details. 
+The methodology of hiding implementation details from the user and only providing functionality to them. Example: Android APK
+
+WAYS TO ACHIEVE JAVA ABSTRACTION
+1) Abstract Class 2) Interface
+
+* Encapsulation: Binding variables and methods under single entity or single class. It leads to data hiding.
+OOPS MAKE OUR CODE EASIER TO MAINTAIN, EASIER TO UNDERSTAND, EASIER TO DEVELOP, MORE READIBLE
+
+Class: Student
+Variables (or Properties): name, roll no, DOB
+Methods: read(), write(), play()
+Objects: any student like abc, xyz etc
+
+Class: Dog
+Variables (or Properties): breed, size, color, age
+Methods (or Behaviour): eat(), sleep(), run(), bark()
+Objects: All types of breed like bull dog, German Shephard etc
+
+
+* Inheritance: Acquiring the properties of one class (parent) to another class (child)
+PARENT CLASS -----> CHILD CLASS
+BASE CLASS -----> DERIVED CLASS
+SUPER CLASS -----> SUB CLASS
+
+Types of Inheritance in JAVA:
+1) Single Level Inheritance
+2) Multi Level Inheritance
+3) Hierarchical Inheritance
+
+Note: Multiple Inheritance not implemented in Java. It is implemented in Java using interfaces.
+
+* Real world example of inheritance: 
+ 
+
+* Polymorphism (ability to take more than one form): Objects performing different task using same method name. Example: Add() and Add(int a, int b).
+
+It can be broken up into two pieces as described below.
+Poly=many
+Morphism=Forms/shapes
+Polymorphism is one of the important fundamental features of object oriented paradigm. Literally, polymorphism means one name and many forms. In computer science we refer polymorphism as a capability of a method to have multiple definitions.
+
+A SINGLE METHOD IS CAPABLE OF DOING DIFFERENT DIFFERENT ACTION
+
+Types of Polymorphism:
+1) Method Overloading (compile time or static polymorphism) - add()
+2) Method Overriding (run time or dynamic polymorphism) - marry girl and driving example for parent and child
+
+MORE EXAMPLES
+overriding: 
+1) suppose there is a method getInterestRate() which returns the interest rate of a bank. RBI is the superclass and it returns 7 for getInterestRate(). 
+There are various banks like sbi, axis, icici, etc which extend RBI class and override the getInterestRate() method to return 7.5, 8, 8.5, etc respectively.
+
+abstract class Bank{    
+	abstract int getRateOfInterest();    
+}    
+class SBI extends Bank{    
+	int getRateOfInterest(){return 7;}    
+}    
+class PNB extends Bank{    
+	int getRateOfInterest(){return 8;}    
+} 
+
+2) 
+class Father
+{
+	void drive()
+	{
+		//drive cautiously :-)
+	}
+	void home(){sout("father's home")}
+	void mobile(){sout("father's mobile")}
+}
+class You extends Father
+{
+	void drive()
+	{
+		//drive rash! :P
+	}
+	//after crossing age 18
+	void mobile(){sout("my mobile")}
+}
+
+3) 
+abstract class Shape{  
+	abstract void draw();  
+}  
+//In real scenario, implementation is provided by others i.e. unknown by end user  
+class Rectangle extends Shape{  
+	void draw(){System.out.println("drawing rectangle");}  
+}  
+class Circle1 extends Shape{  
+	void draw(){System.out.println("drawing circle");}  
+}
+
+overloading: 
+1) The payment option on any ecommerce website has several options like netbanking, COD, credit card, etc. That means, a payment method is overloaded several times to perform single payment function in various ways.
+2) An adjustable screwdriver may work on different types of screws based on the attachment (bit) supplied.
+3)  class You
+	{
+		void talk(Stranger obj)
+		{
+			sysout("Hi, my day was great!");
+		}
+		void talk(Beloved obj)
+		{
+			sysout("Hi, my day was great! You won't believe what happened today! Blah!Blah!Blah!Blah!Blah!Blah!Blah!Blah!Blah!Blah! ");
+		}
+	}
+
+* If we have to perform only one operation, having same name of the methods increases the readability of the program.
+ADVANTAGE of method overloading
+Method overloading increases the readability of the program.
+
+* In Java, an abstract class can implement an interface, and not provide implementations of all of the interface's methods

@@ -1,0 +1,26 @@
+- In order to over come from the problems of tight coupling between objects, spring framework uses dependency injection mechanism with the help of POJO model and through dependency injection its possible to achieve loose coupling.
+
+- Define spring framework?
+The Spring Framework is a open source application framework for the Java platform
+
+- What are Java beans?
+JavaBeans are classes that encapsulate many objects into a single object (the bean). They are serializable, have a zero-argument constructor, and allow access to properties using getter and setter methods. The name "Bean" was given to encompass this standard, which aims to create reusable software components for Java.
+
+- What are Spring bean?
+The objects that form the backbone of your application and that are managed by the Spring IoC* container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container. These beans are created with the configuration metadata that you supply to the container, for example, in the form of XML definitions.
+
+What is Autowiring?
+Autowiring is a DI container feature where the dependencies are automatically looked for according to some criteria.
+
+- what are web service
+https://www.youtube.com/watch?v=oTzNRv6X51o
+https://en.wikipedia.org/wiki/Web_service
+
+- DI and IOC
+https://stackoverflow.com/questions/9403155/what-is-dependency-injection-and-inversion-of-control-in-spring-framework
+
+Dependency Injection can be done by setter injection or constructor injection.
+using a dependency injection of any given below type:
+a constructor injection
+a setter injection
+an interface injection

@@ -1,0 +1,17 @@
+Overlapping sub-problems https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/
+Optimal Sub-Structure https://www.geeksforgeeks.org/optimal-substructure-property-in-dynamic-programming-dp-2/
+longest increasing subsequence by DP (also print the one of the correct subsequence HINT - we need to figure out from back of the array) 
+longest bi-tonic subsequence (sequence which first increases and then decreases)
+longest common subsequence in 2 strings (also print the one of the largest common sub-sequence string)
+maximum square having 1's in binary matrix
+tiling Problem (count the number of ways to tile the "2 x n" board using the "2 x 1" tiles. 
+edit distance
+number of ways to cover the distance with 1, 2 and 3 steps
+
+0-1 knapsack problem (write this one on paper)
+minimum number of jumps to reach end using DP (write this one on paper)
+coin change problem solution
+
+practice only DP competitive programming questions 
+write minimum number of jumps to reach end logic in O(n) on paper
+maximum rectangle having 1's in binary matrix (use of max histogram logic and DP)

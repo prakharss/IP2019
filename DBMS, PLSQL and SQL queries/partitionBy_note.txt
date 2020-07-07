@@ -1,0 +1,28 @@
+QUESTION
+Can someone please explain what the partition by keyword does and give a simple example of it in action, as well as why one would want to use it? I have a SQL query written by someone else and I'm trying to figure out what it does.
+
+An example of partition by:
+
+SELECT empno, deptno, COUNT(*) 
+OVER (PARTITION BY deptno) DEPT_COUNT
+FROM emp
+The examples I've seen online seem a bit too in-depth.
+
+ANSWER
+The PARTITION BY clause sets the range of records that will be used for each "GROUP" within the OVER clause.
+
+In your example SQL, DEPT_COUNT will return the number of employees within that department for every employee record. (It is as if your de-nomalising the emp table; you still return every record in the emp table.)
+
+emp_no  dept_no  DEPT_COUNT
+1       10       3
+2       10       3
+3       10       3 <- three because there are three "dept_no = 10" records
+4       20       2
+5       20       2 <- two because there are two "dept_no = 20" records
+If there was another column (e.g., state) then you could count how many departments in that State.
+
+It is like getting the results of a GROUP BY (SUM, AVG, etc.) without the aggregation of the result set.
+
+It is useful when you use the LAST OVER or MIN OVER functions to get, for example, the lowest and highest salary in the department and then use that in a calulation against this records salary without a sub select, which is much faster.
+
+Read the linked AskTom article for further details.

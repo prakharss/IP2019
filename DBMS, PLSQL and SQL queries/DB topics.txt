@@ -1,0 +1,46 @@
+- SQL [sql query practice (standard queries and complex)]
+- primary, foreign key and join concept 
+- clustered and non clustered index 
+- indexes and all its types
+- cursor
+- B and B+ tree
+- normalisation and it's use (how to remove redundancy)
+- insertion, deletion and updation anamolies
+- ACID properties (properties of a transaction) https://www.geeksforgeeks.org/acid-properties-in-dbms/
+- CRUD operation in DB
+- Data Integrity (consistency and accuracy of Data)
+- basic of transaction
+- how to design a DB for bookmyshow application
+- varchar2 v/s varchar (varchar2 take null and empty string as same https://www.thecrazyprogrammer.com/2018/01/difference-varchar-varchar2.html
+- partition by and group by comparision
+- locking in DB
+- Nth highest salary sql query, highest and 2nd highest salary
+- DB question on desktop (solve it)
+
+W3 tutorials used to go through basic concepts of SQL 
+Practice of sql complex questions 
+
+No SQL v/s RDMS database - mongoDb v/s oracleDb
+what is no sql - https://www.youtube.com/watch?v=uD3p_rZPBUQ
+
+IMP URL's TO GO THROUGH
+oracle-base.com
+techonthenet.com
+https://www.techbeamers.com/sql-query-questions-answers-for-practice/
+https://www.geeksforgeeks.org/commonly-asked-dbms-interview-questions/
+https://www.geeksforgeeks.org/commonly-asked-dbms-interview-questions-set-2/
+https://www.geeksforgeeks.org/sql-interview-questions/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

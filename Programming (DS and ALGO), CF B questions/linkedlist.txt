@@ -1,0 +1,24 @@
+LINKLIST 
+reverse list from start to end by loop
+reverse list from m to n position 
+reverse list in groups of given size k 
+rotate list
+find middle element
+remove duplicates from sorted list
+remove all duplicates from a sorted list
+check list is palindrome or not 
+detect and remove loop in linklist
+clone the link list 
+
+delete without head pointer
+using recursion in linklist (reverse using recursion)
+pairwise swap of link list
+implement queue and stack using linklist
+given a linklist of 0's, 1's and 2's and sort it
+add 2 number represented by linklist
+merge 2 sorted linklist
+flatening a link list
+
+
+
+

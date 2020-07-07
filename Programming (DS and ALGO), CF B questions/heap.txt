@@ -1,0 +1,9 @@
+heap sort heap
+Kth largest or smallest element using max and min heap (for continous stream as well)
+binary heap all operations (using this we can create priority queue)
+operations on binary min heap
+find median in running array
+rearrange characters
+
+merge K sorted array and linklist
+nearly sorted array

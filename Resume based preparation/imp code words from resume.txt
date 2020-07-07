@@ -1,0 +1,19 @@
+SONAR
+- bug, vulnerability, code smell, code coverages, duplications
+
+FORTIFY
+- what security issue you had fixed in MSP
+
+FRONT END V/S BACKEND
+- I consider server-side programming to be "backend" and client-side programming to be "frontend".
+
+APPLICATION SERVER V/S WEB SERVER V/S Batch Server
+
+GIT
+- what is upstream thing
+
+REST API
+
+ODATA SERVICES
+
+AGILE
