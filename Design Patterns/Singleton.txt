@@ -5,6 +5,9 @@ class Prakhar {
 	//obj1 and obj2 are equal
 }
 
+
+
+
 class Singleton {
 	private static Singleton uniqueInstance;
 	private Singleton() {}

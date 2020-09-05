@@ -2,14 +2,14 @@ public class FactoryMain {
 	public static void main(String a[])
 	{
 		OperatingSystemFactory osf = new OperatingSystemFactory();
-		OS obj = osf.getInstance("Open");
-		obj.spec;
-
 		OS obj = osf.getInstance("Closed");
 		obj.spec;
 
-		OS obj = osf.getInstance("Other");
-		obj.spec;
+		// OS obj = osf.getInstance("Closed");
+		// obj.spec;
+
+		// OS obj = osf.getInstance("Other");
+		// obj.spec;
 	}
 }
 
@@ -49,11 +49,11 @@ public class IOS implements OS
 	}
 }
 
-public Windows implements OS
+public class Windows implements OS
 {
 	@Override
 	public void spec()
 	{
-		System.out.println("I am abput to die");
+		System.out.println("I am about to die");
 	}
 }

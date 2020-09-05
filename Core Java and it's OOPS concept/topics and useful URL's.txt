@@ -111,3 +111,7 @@ https://www.youtube.com/watch?v=mf0jQijo9C4 (good abstract class and interface i
 Association, Composition and Aggregation in Java
 https://www.geeksforgeeks.org/association-composition-aggregation-java/
 https://www.edureka.co/blog/association-in-java/#association
+
+https://javaconceptoftheday.com/java-interview-questions-on-main-method/ - why we write public static void main(String[] args)
+https://www.programiz.com/java-programming/varargs - Varargs 
+https://stackoverflow.com/questions/540396/why-is-main-in-java-void - why main method is void in java

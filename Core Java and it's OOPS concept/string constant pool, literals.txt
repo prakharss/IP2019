@@ -1,12 +1,16 @@
 https://study.com/academy/lesson/java-string-constant-pool-concept-mechanism.html
 
 public class Strings 
-    { 
-      public static void main(String ads[])
-      { 
-           String a =    "meow"; 
-           String ab = a + "deal"; 
-           String abc= "meowdeal"; 
-           System.out.println  (ab==abc); 
-      } 
-    } 
+{ 
+  public static void main(String ads[])
+  { 
+       String a =    "meow"; 
+       String ab = a + "deal"; 
+       String abc= "meowdeal"; 
+       System.out.println (ab==abc); 
+  } 
+} 
+
+String abc=new String("fadf");  
+String abc1=new String("fadf");
+3 objects will be created  
